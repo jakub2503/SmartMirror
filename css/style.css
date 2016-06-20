@@ -1,0 +1,38 @@
+body{
+	height: 100%;
+	background-color: black;
+	margin: 30px;
+}
+
+#date_time{
+	float: right;
+	position: relative;
+}
+
+.text{
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 60px;
+}
+
+.time{
+	text-align: center;
+}
+
+.main_time{
+	display: inline-block;
+	font-size: 85px;
+}
+
+.seconds{
+	display: inline-block;
+	position: relative;
+	left: 5px;
+	bottom: 32px;
+	font-size: 40px;
+}
+
+.date{
+	font-size: 20px;
+	text-align: center;
+}

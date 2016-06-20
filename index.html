@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>SmartMirror</title>
+  <meta name="description" content="SmartMirror Project">
+  <meta name="author" content="Jan Malicki">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+			appId      : '539907286196462',
+			xfbml      : true,
+			version    : 'v2.6'
+			});
+		};
+
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div id="date_time">
+		<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+		<div id="time" class="text time"></div>
+		<div id="date" class="text date"></div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
